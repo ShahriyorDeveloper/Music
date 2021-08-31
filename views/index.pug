@@ -2,4 +2,8 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  ul.list-group 
+    each music, i in musics 
+     li.list-group-item
+        a(href="/music/edit/"+ music._id)=music.name
+        

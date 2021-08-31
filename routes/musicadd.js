@@ -5,7 +5,7 @@ const router = express.Router();
 
 /* GET users listing. */
 router.get('/add', function(req, res, next) {
-  res.render("Musicadd", { title: "musiqa qo`shish sahifasi"})
+        res.render("musicadd", { title: "musiqa qo`shish sahifasi"})
 });
 
 router.post('/add', function(req, res) {
